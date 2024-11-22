@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveIti", "SolveIti.csproj", "{4EB63D78-46C3-4A65-9E67-512E397CC8C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EB63D78-46C3-4A65-9E67-512E397CC8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB63D78-46C3-4A65-9E67-512E397CC8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB63D78-46C3-4A65-9E67-512E397CC8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB63D78-46C3-4A65-9E67-512E397CC8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {215ECFFE-6240-4055-AE21-8713D11FDCA0}
+	EndGlobalSection
+EndGlobal

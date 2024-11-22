@@ -1,0 +1,43 @@
+﻿@model GeneralModel
+@{
+    ViewData["Title"] = @Model.systemTypeSystemsModel.systemTypeModel.Name;
+}
+
+<!doctype html>
+<html data-bs-theme="dark">
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <br />
+
+        <div>
+            <main class="d-flex flex-nowrap">
+                <div class="flex-shrink-0 p-3" style="width: 350px;">
+                    <ul class="list-unstyled ps-0">
+                        @foreach (var qcm in @Model.systemTypeSystemsModel.Systems)
+                        {
+                            <li class="mb-3">
+                                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#@qcm.idName" aria-expanded="false">
+                                    @qcm.Name
+                                </button>
+                                <div class="collapse" id="@qcm.idName">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        @foreach (var qcms in @qcm.ApplicationsOfTheSystem)
+                                        {
+                                            <li>
+                                                <a href="@qcms.DownloadPath" class="link-body-emphasis d-inline-flex text-decoration-none rounded">@qcms.Name</a>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

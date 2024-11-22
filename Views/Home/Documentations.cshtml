@@ -1,0 +1,31 @@
+﻿@model GeneralModel
+@{
+    ViewData["Title"] = "Документация";
+}
+
+<!doctype html>
+<html data-bs-theme="dark">
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <br />
+
+        <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
+            <form method="post">
+                <ul class="nav nav-pills nav-flush flex-column mb-auto text-left">
+                @foreach (var doc in Model.documentationModels)
+                {
+                    <p>
+                        <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="@doc.DownloadPath">
+                            @doc.Name
+                        </a>
+                    </p>
+                }
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
